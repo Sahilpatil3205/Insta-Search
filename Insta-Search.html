@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instant Search</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: url('https://wallpapercave.com/uwp/uwp4635145.jpeg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        .container {
+            text-align: center;
+            width: 100%;
+        }
+        .search-box {
+            width: 50%;
+            margin: auto;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+        }
+        .search-box input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            outline: none;
+            background: transparent;
+            color: white;
+            font-size: 18px;
+        }
+        .icons {
+            margin-top: 20px;
+        }
+        .icons a {
+            margin: 0 15px;
+            font-size: 30px;
+            color: dimgrey;
+            text-decoration: none;
+        }
+        .top-right {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .profile {
+            width: 40px;
+            height: 40px;
+            background: lightskyblue;
+            border-radius: 50%;
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .profile i {
+            font-size: 20px;
+            color: white;
+        }
+        .menu {
+            font-size: 20px;
+            cursor: pointer;
+        }
+        h1{
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-right">
+        <div class="profile"><i class="fas fa-user"></i></div>
+        <i class="fas fa-ellipsis-v menu"></i>
+    </div>
+    <div class="container">
+        <h1>Insta- Search</h1>
+        <div class="search-box">
+            <input type="text" placeholder="Search...">
+        </div>
+        <div class="icons">
+            <a href="https://mail.google.com" target="_blank"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.amazon.com" target="_blank"><i class="fab fa-amazon"></i></a>
+            <a href="https://store.steampowered.com" target="_blank"><i class="fas fa-gamepad"></i></a>
+        </div>
+    </div>
+</body>
+</html>
